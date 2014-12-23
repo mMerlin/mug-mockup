@@ -1,25 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-	<!-- Template based on http://udacity.github.io/frontend-nanodegree-styleguide/ -->
-	<!-- TODO: delete this comment block after reviewing
-		All code lower case, except:
-			text/CDATA
-		No trailing whitespace
-		Use UTF-8 (no BOM) for source files
-		Use comments to explain code where needed|possible
-		Mark todos and action items with TODO:
-			TODO: {action item}
-		{semantic} {valid} html5
-		Do not explicitly close self closing elements, ie <br> not <br />; <img> not <img />
-		Provide alternative content text for multimedia (unless only decorative)
-			alt, transcripts, captions
-		Separate structure from presentation from behaviour (.html .css .js)
-			Keep interaction to a minimum
-		Do not use entity references (not needed with utf-8) except &lt; &amp; &nbsp;
-		Use new line for every block, list, table element; indent every such child element
-		Use double quotes for attribute values
-			<a href="login/" class="btn btn-secondary">Login</a>
-	-->
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -29,15 +9,9 @@
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/main.css">
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+	<!-- can not use the shim etc js with the autograder: at least not when using external resources -->
 </head>
 <body>
-	<img class="mockup-overlay" src="images/page-mock.png"><!-- TODO: Remove this temporary alignment overlay -->
 	<div class="container">
 		<header class="row">
 			<div class="col-md-12">
@@ -47,14 +21,14 @@
 		<main class="row">
 			<aside class="col-md-5">
 				<img src="images/mug.png" class="img-responsive" alt="Orange mug with with Udacity and Udacity styalized 'U' logo">
-				<section class="features">
-					<h2>Main Features</h2>
-					<ul>
+				<section class="features-block">
+					<h2 class="features-header">Main Features</h2>
+					<ul class="features-list">
 						<li>Holds your favorite drink</li>
 						<li>Energizing color</li>
 						<li>Reminds you to learn</li>
 					</ul>
-				</section>
+				</section><!-- /features-->
 			</aside><!-- /.col-md-5 -->
 			<article class="col-md-7">
 				<h2 class="sub-header">A Good Way to Start a Day</h2>
