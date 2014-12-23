@@ -1,7 +1,7 @@
 mug-mockup
 ==========
 
-Mockup to web page for udacity nanodegree project
+Mockup to web page project for udacity nanodegree
 
 This repro tracks my progress on creating project 1 for the Udacity Nanodegree,
 Front-End Web Developer.  This is for the December 2014 Cohort.
@@ -78,9 +78,9 @@ Another cause of that error we just discovered: if your line-height is a large
 value like 200%.
 
 Note:
-The source mockup image is included in the repo as images/page-mock.png,
-although the final version of the code will only reference it in commented out
-code.
+The source mockup image is included in the repo as images/page-mock.png.
+mockup.html can be used to view it directly, and it was attached as an overlay
+to the project while under development, see alignment mismatches.
 
 For completeness, the contents of this repo are licensed under the permissive
 MIT License.  It should be noted that since this contains content used for a

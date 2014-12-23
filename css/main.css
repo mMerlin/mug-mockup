@@ -32,40 +32,74 @@ Use double quotation marks for attribute selectors or property values. Do not us
 If possible, group style sheet sections together by using comments.  Separate sections with {multiple} new lines.
 */
 
-/* Use Alternate to box model, so specified sized includes border and padding */
-* {
-	/* -webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-ms-box-sizing: border-box; get from autoprefixer? */
-	box-sizing: border-box;
+/* Setup the mockup image as either background or tranparent foreground */
+.mockup-overlay {
+	/**/display: none; /**/
+	left: 0px;
+	margin: 0;
+	opacity: 0.4;
+	padding: 0;
+	position: absolute;
+	top: 0;
+	/* z-index: 1000; */
+	border-bottom: 1px dashed red;
+}
+
+body {
+	font-family: Kalimati, Verdana, sans-serif;
+	/* font-family: "Lucida Grande", sans-serif; */
+	/* font-family: sans-serif; */
+	/* TODO: pick one font, and delete the other */
+	color: #666;
+	/* The color is specified as #666666 in the notes, but style guide says to
+	   use the 3 character version for those cases */
+	font-size: 18px;
+	line-height: 32px;
+}
+
+h2 {
+	color: #f07c17;
+}
+
+.container {
+	margin-top: 25px;
+	border-bottom: 1px dotted green;/* TODO: remove bottom algnment check */
 }
 
 
 /* Header */
-.header {
-    …
-}
-
-.header-nav {
-    …
-}
-
-
-/* Content */
-.gallery {
-    …
-}
-
-.gallery-img {
-    …
+h1 {
+	text-align: center;
+	font-size: 52px;
+	line-height: 52px;
+	margin-bottom: 30px;
 }
 
 
-/* Footer */
-.footer {
-    …
+/* Article */
+.sub-header {
+	font-size: 26px;
+	line-height: 0;
+	margin-bottom: 42px;
+	margin-top: 14px;
 }
 
-.footer-nav {
-    …
+
+/* other? */
+.features {
+	border: 1px solid #ccc; /* TODO: Verify ccc is good versus cccccc */
+	margin-top: 30px;
+	font-size: 18px;
+	line-height: 32px;
+	padding-left: 30px;
+}
+
+.features h2 {
+	font-size: 27px;
+	line-height: 42px;
+}
+
+.features ul {
+	margin-top: 23px;
+	margin-bottom: 41px;
 }
